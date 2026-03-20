@@ -7,3 +7,10 @@ class ExchangeRateResponse(BaseModel):
 
 
 
+# Pydantic model for conversion response
+class ConversionResult(BaseModel):
+    from_currency: str
+    to_currency: str
+    original_amount: float
+    converted_amount: float
+    rate: float
